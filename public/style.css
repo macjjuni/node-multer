@@ -6,6 +6,11 @@
     height: 100vh;
 }
 
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .file-upload-wrap{
     position: absolute;
     top: 50%; left: 50%;
