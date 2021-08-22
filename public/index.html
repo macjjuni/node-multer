@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Multer ex</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+
+        <h1>프로필 업로드</h1>
+        <div class="file-upload-wrap">
+            <form action="/upload/profile" enctype="multipart/form-data" method="post">    
+                <input type="file" name="profile" id="upload-input" accept="image/gif, image/jpeg, image/png, image/webp" /> <!-- inpute[type="file"] -->
+                    <input class="upload-name" value="파일선택" disabled="disabled"> <!-- 텍스트 박스 -->
+                    <label class="upload-btn" for="upload-input">선택</label>  <!-- 버튼 -->
+                <button type="submit" id="submit">전송</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
